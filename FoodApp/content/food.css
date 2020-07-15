@@ -1,0 +1,615 @@
+
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+            background-color: #EAEFF1;
+    font-size: 16px;
+}
+
+img{
+    width:50px;
+    height:50px;
+}
+
+article{
+    transition:  all 1s ;
+}
+
+.video-container{
+
+   position: absolute;
+   left:0;
+   top:0;
+   display: none;
+
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+
+
+   height:100%;
+   
+   width:100%;
+   
+   z-index: 5;
+    background-color: #313131d8;
+}
+
+.videotitle{
+    display: -webkit-box;
+
+    -webkit-line-clamp:2;
+        -webkit-box-orient: horizontal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    text-align: center;
+    color: white;
+    width:100%;
+
+    padding-bottom:1rem;
+    font-weight: 900;
+
+}
+.video{
+   width:90%;
+   height:40%;
+}
+
+
+.close{
+    cursor: pointer;
+    position: absolute;
+    top:1rem;
+    right:1.5rem;
+    width:25px;
+    color:white;
+    font-size: 2rem;
+
+}
+
+.loader {
+    display: none;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+.container{
+    width:100%;
+    margin : 0 auto;
+}
+
+
+.container article{
+
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+  ;
+  
+}
+.row{
+    width: 100%;
+    
+
+
+
+
+}
+
+#foodprofile{
+    background-color: white;
+    text-align: center;
+    position: relative;
+
+    padding-bottom:40px;
+    
+      
+
+
+
+
+}
+
+.ingredient{
+    position: absolute;
+    display: none;
+    overflow-y: auto;
+    flex-flow: column nowrap;
+    width:100%;
+    height:100%;
+    left:0;
+    padding:25px;
+    justify-content: center;
+    box-sizing: border-box;
+    z-index: 2;
+    transition: all .5s ease-in;
+    background-color: rgb(241, 233, 233);
+    top:0;
+   
+}
+
+.i-close{
+    cursor: pointer;
+    position: absolute;
+    top:25px;
+    right:25px;
+    font-size: 25px;
+    
+
+}
+
+.ingredient li{
+    text-align: left;
+    padding:10px;
+    box-sizing: border-box;
+
+    font-family: Goudy Old Style;
+    font-size: 1rem;
+
+}
+.ingredient .subtitle{
+    text-align: left;
+    padding:10px;
+    padding-left:0;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: #292828;
+}
+
+.ingredient li i{
+    color: #ce2934;
+}
+
+
+.foodtitle{
+
+    padding-top:75px;
+    display: -webkit-box;
+
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: normal;
+    text-overflow: ellipsis;
+    font-size: 3rem;
+    font-weight: 900;
+    
+}
+
+.col-2{
+
+    width:25%;
+}
+
+.col-sm-3{
+    width:33.33%;
+}
+
+.foodimage{
+    margin-top: 25px;
+    border-radius:50%;
+    border:5px solid white;
+    width:50%;
+    max-height:400px;
+    max-width: 400px;
+    height:50%
+}
+
+.button-container{
+    font-size: .5rem;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.bg-red{
+    background-color: #ce2934;
+}
+
+
+.bg-grey{
+    background-color: #C5C5C5;
+}
+
+.bg-mustard{
+    background-color: #EDC951;
+}
+.bg-lightgrey{
+    background-color: #EDC951;
+}
+
+
+.bg-green{
+    background-color: rgb(9, 165, 152);
+}
+
+.button-container li{
+  
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    width:60%;
+    font-weight: 900;
+    margin-top:10px;
+    height:50px;
+    border-radius:5px;
+    border:1em;
+}
+.button-container li a{
+    text-decoration: none;
+    color: white;
+}
+.button-container img{
+    width:25px;
+}
+
+.button-container li:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-container li img{
+    width:20px;
+}
+
+
+#health{
+    padding-top:20px;
+    height:100%;
+    padding-bottom: 20px;
+
+
+    
+
+}
+
+#health h1{
+    padding-left:16px;
+    margin-bottom:.2em;
+    font-size: 4rem;
+    font-weight: 900;
+    color: white;
+}
+
+.foodhealth{
+    margin-top:20px;
+    margin-left:16px;
+}
+.foodhealth li{
+    color: white;
+    display:flex;
+    margin: 10px 0;
+    flex-flow: row wrap;
+    align-items: center;
+    font-size: 2rem;
+    font-size: 1.2rem;
+}
+.foodhealth li:last-child{
+    margin-bottom:25px;
+}
+.foodhealth li i{
+    margin-right: .5em;
+    width:25px;
+    color: #0ee2d1;
+
+}
+
+
+.calories{
+    width:100%;
+    margin-top:2em;
+    
+
+}
+#health h2{
+    padding-left:16px;
+
+    font-size: 3rem;
+    color: white;
+    margin-top:20px;
+
+    font-weight: 900;
+}
+#health h2 span{
+    color: #079286;
+}
+
+.bookmark-container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left:1.3rem;
+    z-index: 2;
+    top:1rem;
+    color: rgb(212, 212, 212);
+    max-width:20px;
+    font-size: 1.9rem;
+    cursor: pointer;
+
+}
+
+.bookmark-container i{
+    text-align: center;
+    z-index: 1;
+    
+
+
+}
+.bookmark:hover, .bookmark:focus{
+    color: #13d6c6;
+}
+
+.bookmarked{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+    transition: visibility 0.5s, opacity 0.5s linear;
+    margin-top:3px;
+    margin-left: 15px;
+    padding:8px;
+    opacity: 0;
+    visibility: hidden;
+    border-radius:6px;
+    width:400px;
+    white-space: nowrap;
+    color: rgb(255, 255, 255);
+    height:12px;
+    background: rgb(14, 185, 14);
+    font-size: 1rem;
+}
+
+.calories {
+    margin: 0 auto;
+    margin-top:20px;
+
+
+    width:90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+.calories li{
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+
+    width:40%;
+    font-size:12px;
+    border-radius: .3em;
+    padding:10px;
+    color: white;
+    background-color: #8a8a8a;
+    margin:1em 0;
+
+
+}
+.calories li span{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    right:.7em;
+}
+
+
+
+@media(min-width:2300px)
+{   
+    #foodprofile{
+        
+    }
+    .container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+   
+    .row{
+        max-width:100% ;
+
+    }
+
+    #health{
+        height:inherit;
+    }
+   
+}
+
+@media(min-width:960px) and (max-width:2300px)
+{
+    .container{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+ 
+}
+
+@media(min-width:960px)
+{
+  
+    .container article:hover{
+        transform: scale(1.1, 1.1);
+
+    }
+    .container article{
+        width:1050px;
+    }
+
+    .button-container{
+        width:100% ;
+        margin-top:30px;
+        flex-flow: row wrap;
+
+    }
+
+    #health{
+        padding:55px !important;
+    }
+
+    #foodprofile{
+        
+        padding:55px !important;
+    }
+    .button-container li{
+        width:30% ;
+        
+    }
+    .foodimage{
+        right:-110px !important;
+    }
+ 
+}
+
+@media(min-width:650px) and (max-width:960px)
+{
+    #foodprofile{
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+   .container article{
+       width:inherit;
+   }
+
+ 
+
+    #health{
+        height:inherit;
+    }
+
+
+    .button-container
+    {
+        width:100%;
+        height:50%;
+        justify-content: flex-start;
+
+    }
+    
+
+ 
+
+  
+
+}
+
+
+
+@media(min-width:650px)
+{
+    .container{
+        width:95%;
+        margin: 0 auto;
+     
+    }
+   
+    .container article{
+        max-width:1200px;
+        margin: 0 auto;
+
+        margin-top:100px;
+        flex-flow: row nowrap;
+
+    }
+
+    .row{
+        width:100%;
+    }
+    
+    
+    #foodprofile{
+        display: flex;
+        flex-flow: column wrap;
+        padding-bottom: 0;
+        padding: 40px 40px;
+    }
+   
+    .foodtitle{
+     
+        margin-top:0px;
+        padding-bottom: 0px;
+        -webkit-line-clamp:3;
+       
+    
+        font-size: 4rem;
+    }
+
+    .videotitle{
+        text-align: center;
+        font-size: 25px;
+        display: block;
+    }
+
+  
+    .button-container li{
+      
+        max-width:250px;
+
+    }
+
+    .foodimage{
+        width:100px;
+        height:100px;
+        position: absolute;
+        z-index: 3;
+        top:45%;
+        right:-100px;
+        transform:translate(-50%, -50%);
+    }
+    #health{
+        padding: 40px 40px;
+    }
+
+  
+
+}
+
+
+
+
+@media(min-width:375px) and (max-width:420px)
+{
+    .foodtitle{
+        padding-top:100px;
+        font-size: 4rem;
+
+    }
+
+    #health {
+        padding-top:40px;
+        height:100%;
+    }
+
+}

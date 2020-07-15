@@ -1,0 +1,39 @@
+
+
+
+.container{
+    width:100%;
+    height:100vh;
+    margin:0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.aboutme{
+    max-width: 600px;
+    height:400px;
+    padding:50px;
+
+   background-color: white;
+   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.9);
+
+}
+
+.title{
+    text-align: center;
+    margin-top:50px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.aboutme p {
+    margin-top:75px;
+    font-size: 1.3rem;
+}
+
+.aboutme :last-child{
+    margin-top:30px;
+}

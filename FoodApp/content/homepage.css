@@ -1,0 +1,297 @@
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+            background-color: #EAEFF1;
+    font-size: 16px;
+}
+
+
+#nav-toggle{
+    color: white ;
+}
+
+img{
+    width:25px;
+}
+
+nav{
+    position: fixed;
+    width:100%;
+}
+
+button{
+    background-color: transparent;
+    border:none;
+}
+.main-container{
+    background: url(/Image/wallpaper@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    overflow-y: auto;
+
+}
+
+.container{
+    width:95%;
+    margin:0;
+    height:100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container > h1{
+    font-size: 3.2rem;
+    color: #EDC951;
+    font-weight:  900;
+    text-shadow: 0px 1px 4px #000000;
+
+
+}
+#form{
+    position: relative;
+    width:90%;
+
+    margin-top: 16px;
+    height:40px;
+
+}
+.searchbox-container input{
+    width:100%;
+
+
+    box-shadow: 0 1px 5px black;
+    font-size: .9rem;
+    border-radius: 8px;
+    border:0;
+   padding:10px;
+
+        transition: all .5;
+
+
+
+}
+
+.searchbox-container img{
+    cursor: pointer;
+    position: absolute;
+    width:20px;
+    top:50%;
+    right:-10px;
+    transform: translate(0, -50%);
+}
+
+
+.error-container{
+    width:90%;
+
+    margin-top: 16px ;
+ 
+}
+
+#error{
+   display: none;
+    width:100%;
+    box-shadow: 0 1px 5px black;
+    margin-top:.5em;
+    padding:12px;
+    font-size: 13px;
+    color: white;
+    text-transform: uppercase;
+    border-radius:5px;
+    background-color: #CC2A36;
+
+}
+
+
+
+#no-results{
+    display: none;
+
+    box-shadow: 0 1px 5px black;
+    width:100%;
+    margin-top:.5em;
+    padding:12px;
+    font-size: 13px;
+    color: white;
+    text-transform: uppercase;
+    border-radius:5px;
+    background-color: #CC2A36;
+
+}
+
+
+
+
+
+.imfeelinglucky{
+    cursor: pointer;
+
+    display: flex;
+    font-weight: 700;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    margin-top:16px;
+    background: #CC2A36 0% 0%;
+    box-shadow: 0px 2px 2px #000000;
+border-radius: 10px;
+opacity: 1;
+    width:60%;
+    padding:10px;
+    color: white;
+    font-size: .7rem;
+
+}
+.imfeelinglucky img{
+    margin-left:.5em;
+}
+
+.imfeelinglucky:hover{
+    background-color: rgb(6, 180, 6);
+
+}
+
+
+
+@media(min-width:1046px)
+{
+
+    .container{
+        width:70%;
+        margin:0 auto;
+    }
+    .container h1{
+        text-align: center;
+        width:100%;
+    }
+    #form{
+        width:100%;
+        max-width: 620px;
+
+    }
+    .error-container{
+        width:100%;
+
+        max-width: 620px;
+    }
+    
+    #form input{
+        font-size: .4rem;
+    }
+    #form img{
+        right:15px;
+
+    }
+    .imfeelinglucky{
+        width:20%;
+        font-weight: 700 !important;
+        max-width: 270px;
+        padding:13px 0;
+
+    }
+    html{
+        font-size: 40px ;
+    }
+
+}
+
+@media(min-width:720px) and (max-width: 1046px)
+{
+    #form{
+        width:75%;
+        height:1.2rem;
+    }
+
+
+    .error-container{
+        width:75%;
+    }
+ 
+    html{
+        font-size: 35px ;
+    }
+
+    .searchbox-container input{
+        font-size: .5rem;
+    }
+    .searchbox-container img{
+        width:30px;
+        bottom:-20px;
+    }
+}
+
+@media(min-width:600px) and (max-width: 720px)
+{
+   
+    html{
+        font-size: 28px ;
+    }
+    #form{
+        width:80%;
+    }
+    .error-container{
+        width:80%;
+    }
+    .searchbox-container input{
+        font-size: .6rem;
+    }
+  
+}
+
+@media(min-width:600px) {
+    .searchbox-container input{
+        padding:15px;
+    }
+    #form img{
+        width:25px;
+        top:25px;
+        right:-15px;
+    }
+}
+
+@media(min-width:420px) and (max-width:600px)
+{
+    html{
+        font-size: 20px;
+    }
+    #form{
+        width:70%;
+    }
+    .error-container{
+        width:70%;
+    }
+    .imfeelinglucky{
+        font-size: .5rem !important;
+
+    }
+}
+
+@media(min-width:360px) and (max-width:420px)
+{
+    html{
+        font-size: 18px;
+    }
+    #form{
+        width:90%;
+    }
+  
+
+ 
+}
+
+@media(min-width:360px)
+{   
+    .imfeelinglucky{
+    width:40%;
+    height:25px;
+    max-width:200px;
+    margin-top:16px;
+    font-size: .3rem;
+}
+
+}
